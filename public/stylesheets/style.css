@@ -1,0 +1,178 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color: antiquewhite;
+  background-image: url();
+  background-attachment: fixed; 
+  background-size: cover;
+  text-align: center;
+}
+
+#piano{
+  left:50%; 
+  transform: translate(-50%, -50%); 
+  top: 51%;
+  height: 50%;
+  position: absolute;
+  width: 80%;
+  background-color: black;
+  border-radius: 30px;
+  text-align: center;
+}
+#whitekeys{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 30%;
+  display: inline-block;
+  text-align: center;
+}
+.white{
+  width: 4%;
+  /* width: 50px; */
+  height: 210px;
+  background-color: white;
+  display: inline-block;
+  border-right: 2px solid black;
+  border-bottom: 15px solid gray;
+  border-radius: 5px;
+  z-index: 1;
+}
+#blackkeys{
+  width: 100%;
+  display:inline-block;
+  position: absolute;
+  top: 30%;
+  left: 2.5%; 
+  text-align: center;
+  z-index: 100;
+}
+.black, .blackspace{
+  width: 3%;
+  /* width: 30px; */
+  height: 130px; 
+  background-color: black;
+  border-right: 2px solid transparent;
+  border-bottom: 10px solid gray;
+  border-radius: 0 0 7px 7px;
+  z-index: 100;
+  display: inline-block;
+  position: relative;
+}
+.black{
+  margin-right: 1.03%;
+}
+.blackspace{ 
+  margin-right: 5.2%;
+}
+.whitekeyboard{
+  display: block;
+  position: absolute;
+  margin-top: 160px;
+  display: none;
+  text-align: center;
+  width: 4%;
+
+}
+.blackkeyboard{
+  display: block;
+  position: absolute;
+  margin-top: 85px;
+  color: white;
+  display: none;
+  width: 100%;
+} 
+#show, #hide, #backgroundbutton, #howtoplay{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  color: white;
+  margin-right: 5%;
+}
+#show:hover, #hide:hover, #backgroundbutton:hover, #howtoplay:hover{
+  color: cornflowerblue;
+}
+#show{
+  display: block;
+}
+#hide{
+  display: none;
+}
+#popup{
+  position: absolute;
+  top: 380px;
+  left:50%;
+  transform: translate(-50%, 0);
+  display: none;
+  box-shadow: 0px 0px 5px gray;
+  padding: 10px;
+  text-align: center;
+  background-color:cornsilk;
+  z-index: 100;
+
+}
+h1{
+  font-size: 1in;
+  color: black;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  /* font-size: 100%;
+  width: 100% */
+}
+h4{
+  font-size: 22px;
+  position: absolute;
+  color:  black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  /* top: 1.37in; */
+  top: 17%;
+  /* text-align: center; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#header{
+  color: black;
+  /* top:3%; */
+}
+#options{
+  /* background-color: cornsilk; */
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 35%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  
+}
+#close{
+  float: right;
+  margin-top: 0%;
+  background-color: transparent;
+  border: none;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16px;
+}
+#close:hover{
+  color: red;
+}
+.keypress{
+  border-bottom: 5px solid gray;
+}
+#showVolume, #volume{
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 72%;
+}
+#showVolume{
+  left: 12%;
+}
+#volume{
+  left: 21%;  
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}

@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  //- h1 #{title}
+  div(id='header')
+    h1= title
+    h4= subtitle
+
+  div(id='piano')
+    div(id='whitekeys')
+
+    div(id='blackkeys')
+     
+  div(id='options')
+    div(id='references')
+      button(id='show') Show Keyboard References
+      button(id='hide') Hide Keyboard References 
+    button(id= 'backgroundbutton') Change Background
+    button(id = 'howtoplay') How to Play
+    div(id = 'popup')
+      button(id='close') Close 
+      br
+      p To play this piano, press the keys on your keyboard to play notes! 
+      p You can click on the "Show Keyboard References" button to discover the right keys for each note! 
+      p Play Away!
+
+
+  div(id = "showVolume") Volume: 50%
+  div(class = "volume") 
+    //- input(type="number" min = "0" max= "100" id = "volume")
+    input(type='range' min='0' max='10' id='volume')
+
+  
